@@ -1,10 +1,10 @@
 'use client'
 
 import React from 'react';
-import { CarProps } from '@/types';
-import { CustomButton } from '@/components';
-import { calculateCarRent } from '@/store';
 import Image from 'next/image';
+import { CarProps } from '@/types';
+import { CustomButton, CarDetails } from '@/components';
+import { calculateCarRent } from '@/store';
 
 type CarCardProps = {
   car: CarProps;
@@ -84,6 +84,12 @@ const CarCard: React.FC<CarCardProps> = ({ car }) => {
           />
         </div>
       </div>
+
+      <CarDetails
+        isOpen={isOpen}
+        closeModal={() => setIsOpen(false)}
+        car={car}
+      />
     </div>
   )
 }
