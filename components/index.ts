@@ -7,9 +7,10 @@ import SearchBar from "./SearchBar/SearchBar";
 import SearchManufucturer from "./SearchManufucturer/SearchManufucturer";
 import CarCard from "./CarCard/CarCard";
 import CarDetails from "./CarDetails/CarDetails";
+import ShowMore from "./ShowMore/ShowMore";
 
 export {
   Hero, CustomButton, Navbar, Footer, CustomFilter,
   SearchBar, SearchManufucturer, CarCard,
-  CarDetails
+  CarDetails, ShowMore
 };
